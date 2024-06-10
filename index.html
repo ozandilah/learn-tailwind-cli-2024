@@ -7,117 +7,48 @@
     <link href="public/styles/output.css" rel="stylesheet" />
   </head>
   <body class="bg-sky-300">
-    <div class="h-screen w-screen flex justify-center items-center flex-col">
-      <div
-        class="bg-white shadow-gray-300 shadow-lg w-[613px] h-[373px] mx-auto rounded-2xl flex"
-        id="card"
-      >
-        <div
-          class="w-[229px] h-full bg-customGray rounded-tl-lg rounded-bl-lg flex justify-center items-center"
-          id="card-1"
+    <!-- Header Section -->
+    <header
+      class="w-full bg-white py-3 shadow px-3 flex justify-end items-end"
+      id="Navbar"
+    >
+      <button>
+        <img
+          src="public/assets/hamburger.svg"
+          alt="Logo"
+          class="h-12 mx-auto"
+          class=""
+        />
+      </button>
+    </header>
+    <!-- Hero Section -->
+    <section class="w-full bg-yellow-300 h-[400px] relative" id="heroSection">
+      <div class="max-w-screen-xl mx-auto p-4" id="logo">
+        <a
+          href="/"
+          class="flex bg-white rounded-full justify-center items-center w-24 h-24"
+          >Logo</a
         >
-          <svg
-            version="1.1"
-            id="Layer_1"
-            xmlns="http://www.w3.org/2000/svg"
-            x="0"
-            y="0"
-            viewBox="0 0 256 256"
-            style="enable-background: new 0 0 256 256"
-            xml:space="preserve"
-            class="w-[100px] h-[100px]"
-          >
-            <style>
-              .st1 {
-                fill: #ffefe4;
-              }
-              .st2 {
-                fill: #69ebfc;
-              }
-              .st5 {
-                fill: #d476e2;
-              }
-              .st9 {
-                fill: #ff8354;
-              }
-            </style>
-            <path
-              class="st1"
-              d="M229.935 256H26.065C11.67 256 0 244.33 0 229.935V26.065C0 11.67 11.67 0 26.065 0h203.87C244.33 0 256 11.67 256 26.065v203.87C256 244.33 244.33 256 229.935 256z"
-            />
-            <path
-              d="M229.935 249H26.065C11.67 249 0 237.33 0 222.935v7C0 244.33 11.67 256 26.065 256h203.87C244.33 256 256 244.33 256 229.935v-7C256 237.33 244.33 249 229.935 249z"
-              style="fill: #edd4c2"
-            />
-            <path
-              class="st2"
-              d="M229.935 0H26.065C11.67 0 0 11.67 0 26.065V40h256V26.065C256 11.67 244.33 0 229.935 0z"
-            />
-            <path
-              d="M229.935 0H26.065C11.67 0 0 11.67 0 26.065v7C0 18.67 11.67 7 26.065 7h203.87C244.33 7 256 18.67 256 33.065v-7C256 11.67 244.33 0 229.935 0z"
-              style="fill: #a1f1fc"
-            />
-            <circle class="st9" cx="35" cy="20" r="9" />
-            <circle class="st5" cx="68.5" cy="20" r="9" />
-            <circle cx="102" cy="20" r="9" style="fill: #6770e6" />
-            <path
-              d="M208 121v93.333c0 5.893-4.773 10.667-10.667 10.667H58.667A10.663 10.663 0 0 1 48 214.333V121l80-56 80 56z"
-              style="fill: #b665c2"
-            />
-            <path
-              class="st2"
-              d="M184 225H72c-5.891 0-10.667-4.776-10.667-10.667V75.667C61.333 69.776 66.109 65 72 65h112c5.891 0 10.667 4.776 10.667 10.667v138.667c0 5.89-4.776 10.666-10.667 10.666z"
-            />
-            <path
-              class="st5"
-              d="M168 225H58.667A10.663 10.663 0 0 1 48 214.333V121l120 104z"
-            />
-            <path
-              class="st5"
-              d="M208 121v93.333c0 5.893-4.773 10.667-10.667 10.667H88l120-104z"
-            />
-            <path
-              class="st1"
-              d="M159.333 93H96.667a5.333 5.333 0 1 1 0-10.666h62.667A5.334 5.334 0 0 1 159.333 93zM169.333 114.333H86.667a5.333 5.333 0 1 1 0-10.666h82.667a5.333 5.333 0 1 1-.001 10.666zM169.333 135.333H86.667a5.333 5.333 0 1 1 0-10.666h82.667a5.333 5.333 0 1 1-.001 10.666z"
-            />
-            <circle class="st9" cx="208.79" cy="77.062" r="24.768" />
-            <path
-              d="M208.79 57.294c12.835 0 23.389 9.763 24.643 22.268a25.18 25.18 0 0 0 .125-2.5c0-13.679-11.089-24.768-24.768-24.768s-24.768 11.089-24.768 24.768c0 .844.043 1.678.125 2.5 1.254-12.505 11.808-22.268 24.643-22.268z"
-              style="fill: #ffa172"
-            />
-            <path
-              class="st1"
-              d="m223.8 75.928-12.387-9.729c-.946-.743-2.333-.069-2.333 1.134v5.841h-11.963a3.888 3.888 0 0 0 0 7.776h11.963v5.841c0 1.203 1.387 1.878 2.333 1.134l12.387-9.729a1.442 1.442 0 0 0 0-2.268z"
-            />
-          </svg>
-        </div>
-        <div
-          class="flex-1 bg-white h-full rounded-tr-2xl rounded-br-2xl p-6"
-          id="card-2"
-        >
-          <h2 class="text-grapeColor text-[32px] font-bold">
-            Subscribe to our Newsletter!
-          </h2>
-          <p class="text-slateColor text-base mt-4 mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ab
-            reprehenderit ducimus quis atque laborum dolor saepe natus
-            recusandae sequi!
-          </p>
-          <button
-            class="bg-grapeColor text-white text-base rounded-lg px-8 py-2 hover:bg-violet-950"
-          >
-            Subscribe
-          </button>
-        </div>
-      </div>
-
-      <div class="mt-10">
+        <h1 class="text-white text-8xl text-center font-bold">
+          Tailwind Layout
+        </h1>
         <button
-          class="bg-blue-500 px-5 py-2 text-white rounded-lg hover:bg-yellow-400 active:bg-indigo-700 focus:ring focus:ring-green-300"
+          class="w-32 bg-white rounded-xl py-4 flex mx-auto justify-center items-center absolute bottom-8 left-0 right-0"
         >
-          Cek Selengkapnya...
+          Button
         </button>
       </div>
-    </div>
+    </section>
+    <!--  -->
+    <section class="w-full bg-white relative p-8" id="heroSection">
+      <div class="grid grid-cols-3 max-w-[1120px] mx-auto gap-8">
+        <div class="bg-red-500 h-16"></div>
+        <div class="bg-green-500 h-16"></div>
+        <div class="bg-blue-500 h-16"></div>
+        <div class="bg-red-500 h-16"></div>
+        <div class="bg-green-500 h-16"></div>
+        <div class="bg-blue-500 h-16"></div>
+      </div>
+    </section>
   </body>
 </html>
